@@ -30,6 +30,9 @@ type Product_variables struct {
 		Cflags []string
 		Shared_libs []string
 	}
+	Should_wait_for_qsee struct {
+		Cflags []string
+	}
 	Uses_qcom_um_3_18_family struct {
 		Header_libs []string
 		Shared_libs []string
@@ -58,7 +61,8 @@ type ProductVariables struct {
     Target_surfaceflinger_fod_lib 		*string `json:",omitempty"`
 	Target_uses_color_metadata			*bool 	`json:",omitempty"`
 	Additional_gralloc_10_usage_bits 	*string `json:",omitempty"`
-    Bootloader_message_offset			*int 	`json:",omitempty"`
+	Bootloader_message_offset			*int 	`json:",omitempty"`
+	Should_wait_for_qsee				*bool   `json:",omitempty"`
     Qcom_um_soong_namespace  			*string `json:",omitempty"`
     Uses_qcom_um_family  				*bool	`json:",omitempty"`
 	Uses_qcom_um_3_18_family  			*bool 	`json:",omitempty"`

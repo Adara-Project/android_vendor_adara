@@ -11,6 +11,7 @@ $(call add_json_str_omitempty,	Target_surfaceflinger_fod_lib,			$(TARGET_SURFACE
 $(call add_json_bool,			Target_uses_color_metadata,				$(filter true,$(TARGET_USES_COLOR_METADATA)))
 $(call add_json_str_omitempty,	Additional_gralloc_10_usage_bits,		$(TARGET_ADDITIONAL_GRALLOC_10_USAGE_BITS))
 $(call add_json_val_default,	Bootloader_message_offset,				$(BOOTLOADER_MESSAGE_OFFSET), 0)
+$(call add_json_bool,			Should_wait_for_qsee,					$(filter true,$(TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE)))
 $(call add_json_str_omitempty,	Qcom_um_soong_namespace,				$(if $(filter $(UM_PLATFORMS),$(TARGET_BOARD_PLATFORM)),$(QCOM_SOONG_NAMESPACE),))
 $(call add_json_bool,			Uses_qcom_um_family,					$(filter true,$(TARGET_USES_QCOM_UM_FAMILY)))
 $(call add_json_bool, 			Uses_qcom_um_3_18_family,				$(filter true,$(TARGET_USES_QCOM_UM_3_18_FAMILY)))
