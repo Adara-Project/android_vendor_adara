@@ -2,7 +2,7 @@ bootstrap_go_package {
     name: "soong-adara",
     pkgPath: "adara/soong/android",
     srcs: [
-        "android/variable.go",
+        "android/variables.go",
     ],
 }
 
